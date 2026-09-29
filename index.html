@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173b31">
+    <meta name="description" content="Veintiuna cartas para Juli.">
+    <title>21 cartas para Juli</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <svg class="svg-defs" aria-hidden="true">
+      <symbol id="sloth" viewBox="0 0 340 280">
+        <path d="M18 232c75-19 176-22 304 2" fill="none" stroke="#593f2b" stroke-linecap="round" stroke-width="18"/>
+        <path d="M46 227c-18-29-8-49 25-60-2 28-10 47-25 60Z" fill="#6f8d62"/>
+        <path d="M281 230c11-34 31-48 59-40-13 28-32 41-59 40Z" fill="#7fa06f"/>
+        <g transform="rotate(-7 170 130)">
+          <ellipse cx="170" cy="141" rx="68" ry="82" fill="#9b775a"/>
+          <path d="M132 80c-27-39-60-32-72 8" fill="none" stroke="#8a684e" stroke-linecap="round" stroke-width="22"/>
+          <path d="M207 82c28-37 59-28 69 12" fill="none" stroke="#8a684e" stroke-linecap="round" stroke-width="22"/>
+          <path d="M61 88l-7 10m13-5-6 12m215-12 8 9m-13-3 7 12" fill="none" stroke="#483529" stroke-linecap="round" stroke-width="4"/>
+          <ellipse cx="170" cy="105" rx="59" ry="52" fill="#d9c1a0"/>
+          <path d="M119 100c11-26 30-36 51-25-5 29-20 42-44 39Zm102 0c-11-26-30-36-51-25 5 29 20 42 44 39Z" fill="#6e5748" opacity=".85"/>
+          <path d="M132 100c10 8 19 8 28 0m20 0c10 8 19 8 28 0" fill="none" stroke="#332a25" stroke-linecap="round" stroke-width="4"/>
+          <path d="M162 115q8 7 16 0l-2 10q-6 7-12 0Z" fill="#3d3029"/>
+          <path d="M153 135q17 13 34 0" fill="none" stroke="#6b4c3b" stroke-linecap="round" stroke-width="3"/>
+          <path d="M132 185c-24 18-40 36-47 56m123-56c23 17 39 36 46 56" fill="none" stroke="#8a684e" stroke-linecap="round" stroke-width="23"/>
+          <path d="m78 238 10 7m-3-15 9 8m168 2-10 7m3-16-9 9" fill="none" stroke="#483529" stroke-linecap="round" stroke-width="4"/>
+        </g>
+      </symbol>
+    </svg>
+
+    <section class="gate" id="gate" aria-labelledby="gate-title">
+      <div class="gate__leaf gate__leaf--one"></div>
+      <div class="gate__leaf gate__leaf--two"></div>
+      <div class="gate__card">
+        <span class="gate__number">21</span>
+        <p class="eyebrow">Correspondencia privada</p>
+        <h1 id="gate-title">“Andábamos sin buscarnos,<br>pero sabiendo que andábamos para encontrarnos.”</h1>
+        <p class="gate__attribution">Julio Cortázar · <cite>Rayuela</cite></p>
+        <p class="gate__copy">Hay palabras que tardan en llegar.<br>Estas encontraron otro camino.</p>
+        <form class="key-form" id="key-form" novalidate>
+          <label for="secret-key">Escribí la frase que abre estas cartas</label>
+          <div class="key-form__row">
+            <input id="secret-key" name="secret-key" type="password" autocomplete="off" required aria-describedby="key-hint key-error">
+            <button type="submit">Entrar</button>
+          </div>
+          <p class="key-form__hint" id="key-hint">La frase que solo ustedes conocen.</p>
+          <p class="key-form__error" id="key-error" role="alert"></p>
+        </form>
+      </div>
+      <svg class="gate__sloth" role="img" aria-label="Un perezoso descansando sobre una rama">
+        <use href="#sloth"></use>
+      </svg>
+    </section>
+
+    <main class="app" id="app" hidden>
+      <header class="topbar">
+        <a class="wordmark" href="#inicio" aria-label="Volver al inicio">
+          <span>21</span> cartas para Juli
+        </a>
+        <button class="archive-button" id="open-archive" type="button">
+          <span class="archive-button__mark" aria-hidden="true">✦</span>
+          Las cartas
+        </button>
+      </header>
+
+      <section class="opening" id="inicio" aria-labelledby="opening-title">
+        <div class="opening__glow"></div>
+        <div class="opening__branch opening__branch--left"></div>
+        <div class="opening__branch opening__branch--right"></div>
+
+        <div class="opening__intro">
+          <p class="eyebrow">Carta 01 de 21</p>
+          <h1 id="opening-title">Para Juli,<br><em>con calma.</em></h1>
+          <p>Algunas cartas llegan en papel.<br>Otras necesitan inventarse un camino.</p>
+        </div>
+
+        <div class="envelope-scene" id="envelope-scene">
+          <svg class="opening__sloth" aria-hidden="true">
+            <use href="#sloth"></use>
+          </svg>
+          <div class="envelope" id="envelope">
+            <div class="envelope__back"></div>
+            <div class="envelope__letter" aria-hidden="true">
+              <span>Troy, New York</span>
+              <strong>Querida Juli:</strong>
+              <i></i><i></i><i></i>
+            </div>
+            <div class="envelope__front"></div>
+            <div class="envelope__flap"></div>
+            <button class="wax-seal" id="open-envelope" type="button" aria-label="Abrir la primera carta">
+              <span class="wax-seal__leaf" aria-hidden="true">⌁</span>
+              <span>Abrir</span>
+            </button>
+          </div>
+          <p class="envelope-scene__hint">Tocá el sello para abrirla</p>
+        </div>
+
+        <div class="delivery-note" id="delivery-note" aria-hidden="true">
+          <p class="eyebrow">Un cambio de ruta</p>
+          <blockquote>“A la oficina de correos le dio envidia y se robó mi carta para vos. Así que quise hacer lo más parecido posible.”</blockquote>
+          <button class="primary-button" id="read-letter" type="button">
+            Leer la carta <span aria-hidden="true">→</span>
+          </button>
+          <button class="text-button" id="note-open-archive" type="button">Ver las 21 cartas</button>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="archive" id="archive-dialog" aria-labelledby="archive-title">
+      <div class="dialog-topbar">
+        <div>
+          <p class="eyebrow">Una promesa en progreso</p>
+          <h2 id="archive-title">21 cartas para Juli</h2>
+        </div>
+        <button class="close-button" type="button" data-close="archive-dialog" aria-label="Cerrar archivo">×</button>
+      </div>
+      <p class="archive__intro">Una está despierta. Las demás esperan, sin prisa, el momento de ser entregadas.</p>
+      <div class="letter-grid" id="letter-grid"></div>
+      <p class="archive__footer"><span aria-hidden="true">⌁</span> Lo bonito también sabe esperar.</p>
+    </dialog>
+
+    <dialog class="reader" id="reader-dialog" aria-labelledby="reader-title">
+      <div class="reader__topbar">
+        <button class="reader__back" type="button" data-close="reader-dialog" aria-label="Cerrar carta">← <span>Volver</span></button>
+        <div class="reader__heading">
+          <span>01 / 21</span>
+          <h2 id="reader-title">Primera Carta - 27 de agosto 2026</h2>
+        </div>
+        <button class="reader__archive" id="reader-open-archive" type="button">01 / 21</button>
+      </div>
+      <div class="reader__desk">
+        <button class="page-button page-button--previous" id="previous-page" type="button" aria-label="Página anterior">←</button>
+        <figure class="paper" id="paper">
+          <img id="letter-page" alt="Página de la carta manuscrita" draggable="false">
+        </figure>
+        <button class="page-button page-button--next" id="next-page" type="button" aria-label="Página siguiente">→</button>
+      </div>
+      <div class="reader__controls">
+        <span id="page-count">Página 1 de 5</span>
+        <div class="page-dots" id="page-dots" aria-label="Páginas de la carta"></div>
+        <span class="reader__date">27 · 08 · 2026</span>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>

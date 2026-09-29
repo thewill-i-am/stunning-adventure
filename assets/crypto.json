@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "kdf": {
+    "name": "PBKDF2",
+    "hash": "SHA-256",
+    "iterations": 600000,
+    "salt": "c8MYpsSWNc03sJlrIXOE+w=="
+  },
+  "cipher": "AES-GCM",
+  "files": {
+    "assets/carta-01/pagina-00.webp": {
+      "path": "assets/carta-01/pagina-00.webp.enc",
+      "type": "image/webp",
+      "iv": "OPppa4Ne9CIxl7Ty"
+    },
+    "assets/carta-01/pagina-01.webp": {
+      "path": "assets/carta-01/pagina-01.webp.enc",
+      "type": "image/webp",
+      "iv": "AUphbavIQ4Dgs2Js"
+    },
+    "assets/carta-01/pagina-02.webp": {
+      "path": "assets/carta-01/pagina-02.webp.enc",
+      "type": "image/webp",
+      "iv": "95yW1hz1nM8mH0P7"
+    },
+    "assets/carta-01/pagina-03.webp": {
+      "path": "assets/carta-01/pagina-03.webp.enc",
+      "type": "image/webp",
+      "iv": "1ooEiNOHS2lHAfpx"
+    },
+    "assets/carta-01/pagina-04.webp": {
+      "path": "assets/carta-01/pagina-04.webp.enc",
+      "type": "image/webp",
+      "iv": "e9KaeKqbxupsV0TL"
+    }
+  }
+}
